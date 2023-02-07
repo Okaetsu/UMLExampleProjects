@@ -11,7 +11,7 @@ WidgetT* UWidget::CreateWidget(UE4::UClass* WidgetClass, UE4::APlayerController*
 	*/
 	struct
 	{
-		UObject* Owner;
+		UE4::UObject* Owner;
 		UE4::UClass* WidgetClass;
 		UE4::FName WidgetName;
 		UUserWidget* ReturnValue;

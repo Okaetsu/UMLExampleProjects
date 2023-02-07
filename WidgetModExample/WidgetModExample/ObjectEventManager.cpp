@@ -24,6 +24,14 @@ void ObjectEventManager::RegisterEvent(UE4::UObject* Object, std::string eventNa
 	registeredObjects[objectName].registerEvent(new Event<>(eventName, cb));
 }
 
+void ObjectEventManager::Clear()
+{
+	if (registeredObjects.size() > 0)
+	{
+		registeredObjects.clear();
+	}
+}
+
 void ObjectEventManager::RegisterObject(UE4::UObject* Object)
 {
 	auto objectName = Object->GetName();

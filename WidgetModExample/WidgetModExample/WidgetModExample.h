@@ -4,8 +4,8 @@
 #include "ModMenu.h"
 #include "ModMenuButton.h"
 #include "UWidgetBlueprintLibrary.h"
+#include "WidgetFactory.h"
 #include "ObjectEventManager.h"
-#include "FontManager.h"
 
 class WidgetModExample : public Mod
 {
@@ -16,7 +16,7 @@ public:
 	{
 		ModName = "WidgetModExample"; // Mod Name -- If Using BP ModActor, Should Be The Same Name As Your Pak
 		ModVersion = "1.0.0"; // Mod Version
-		ModDescription = ""; // Mod Description
+		ModDescription = "Example for messing with Widgets in general"; // Mod Description
 		ModAuthors = "Okaetsu"; // Mod Author
 		ModLoaderVersion = "2.2.1";
 

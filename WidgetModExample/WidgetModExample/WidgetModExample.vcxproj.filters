@@ -91,9 +91,6 @@
     <ClCompile Include="UWidgetBlueprintLibrary.cpp">
       <Filter>Mod\BlueprintLibrary</Filter>
     </ClCompile>
-    <ClCompile Include="FontManager.cpp">
-      <Filter>Mod</Filter>
-    </ClCompile>
     <ClCompile Include="ObjectEventManager.cpp">
       <Filter>Mod</Filter>
     </ClCompile>
@@ -101,6 +98,9 @@
       <Filter>Mod\Classes\Custom</Filter>
     </ClCompile>
     <ClCompile Include="WidgetEvent.cpp">
+      <Filter>Mod</Filter>
+    </ClCompile>
+    <ClCompile Include="WidgetFactory.cpp">
       <Filter>Mod</Filter>
     </ClCompile>
   </ItemGroup>
@@ -180,9 +180,6 @@
     <ClInclude Include="UWidgetBlueprintLibrary.h">
       <Filter>Mod\BlueprintLibrary</Filter>
     </ClInclude>
-    <ClInclude Include="FontManager.h">
-      <Filter>Mod</Filter>
-    </ClInclude>
     <ClInclude Include="EventSystem.h">
       <Filter>Mod</Filter>
     </ClInclude>
@@ -193,6 +190,9 @@
       <Filter>Mod\Classes\Custom</Filter>
     </ClInclude>
     <ClInclude Include="WidgetEvent.h">
+      <Filter>Mod</Filter>
+    </ClInclude>
+    <ClInclude Include="WidgetFactory.h">
       <Filter>Mod</Filter>
     </ClInclude>
   </ItemGroup>

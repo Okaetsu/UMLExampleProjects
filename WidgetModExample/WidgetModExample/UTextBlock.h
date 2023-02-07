@@ -2,7 +2,6 @@
 #include "UKismetStringLibrary.h"
 #include "UWidget.h"
 #include "FSlateFontInfo.h"
-#include "FontManager.h"
 #include "FSlateColor.h"
 
 /*
@@ -16,8 +15,6 @@ public:
 	FSlateFontInfo GetFont();
 
 	void SetFont(FSlateFontInfo FontInfo);
-
-	void SetFont(std::string FontFamily, UE4::FString Typeface, int FontSize);
 
 	void SetColorAndOpacity(FSlateColor ColorAndOpacity);
 

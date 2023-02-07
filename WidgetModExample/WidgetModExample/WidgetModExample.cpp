@@ -3,6 +3,7 @@
 
 /*
 * Whenever the function 'Widget_CallEvent' is called in any blueprint, it will be received here.
+* If you want your widget to call events here, copy the 'Widget_CallEvent' function to your own widget from any of the provided Widgets that come with this example project.
 */
 BPFUNCTION(Widget_CallEvent) {
 	struct InputParams
@@ -48,10 +49,14 @@ void WidgetModExample::PostBeginPlay(std::wstring ModActorName, UE4::AActor* Act
 		//Sets ModActor Ref
 		ModActor = Actor;
 
-		auto modMenu = UWidget::CreateWidget<ModMenu>(ModMenu::WidgetBlueprintGeneratedClass(), nullptr);
+		// Need to do cleaning up here so we don't feed the program too much memory with all the registered events / objects
+		WidgetFactory::Clear();
+		ObjectEventManager::Clear();
+
+		auto modMenu = WidgetFactory::CreateWidget<ModMenu>(ModMenu::WidgetBlueprintGeneratedClass(), nullptr);
 		modMenu->AddToViewport(1000);
 
-		auto modMenuButton = UWidget::CreateWidget<ModMenuButton>(ModMenuButton::WidgetBlueprintGeneratedClass(), nullptr);
+		auto modMenuButton = WidgetFactory::CreateWidget<ModMenuButton>(ModMenuButton::WidgetBlueprintGeneratedClass(), nullptr);
 		modMenuButton->AddToViewport(1002);
 
 		modMenuButton->AddEvent(WidgetEvent::EventType::Click, [modMenu]() {
@@ -67,11 +72,11 @@ void WidgetModExample::PostBeginPlay(std::wstring ModActorName, UE4::AActor* Act
 		auto Item1 = modMenu->AddItem(UE4::FString(L"Test1"));
 
 		Item1->AddEvent(WidgetEvent::EventType::Hover, []() {
-			std::cout << "Hovered" << "\n";
+			std::cout << "Item1 Hovered" << "\n";
 		});
 
 		Item1->AddEvent(WidgetEvent::EventType::Unhover, []() {
-			std::cout << "Unhovered" << "\n";
+			std::cout << "Item1 Unhovered" << "\n";
 		});
 
 		auto Item2 = modMenu->AddItem(UE4::FString(L"Test2"));

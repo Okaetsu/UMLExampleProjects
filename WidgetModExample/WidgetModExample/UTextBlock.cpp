@@ -29,24 +29,6 @@ void UTextBlock::SetFont(FSlateFontInfo FontInfo)
 	this->ProcessEvent(fn, &params);
 }
 
-void UTextBlock::SetFont(std::string FontFamily, UE4::FString Typeface, int FontSize)
-{
-	static auto fn = UE4::UObject::FindObject<UE4::UFunction>("Function UMG.TextBlock.SetFont");
-	struct
-	{
-		FSlateFontInfo FontInfo;
-	}params;
-	params.FontInfo = GetFont();
-
-	auto Font = FontManager::Get(FontFamily);
-
-	params.FontInfo.FontFamily = Font;
-	params.FontInfo.Size = FontSize;
-	params.FontInfo.Typeface = UKismetStringLibrary::ToName(Typeface);
-
-	this->ProcessEvent(fn, &params);
-}
-
 void UTextBlock::SetColorAndOpacity(FSlateColor ColorAndOpacity)
 {
 	static auto fn = UE4::UObject::FindObject<UE4::UFunction>("Function UMG.TextBlock.SetColorAndOpacity");

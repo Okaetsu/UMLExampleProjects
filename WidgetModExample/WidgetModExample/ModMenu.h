@@ -7,7 +7,7 @@
 #include "UKismetTextLibrary.h"
 #include "UGameplayStatics.h"
 
-// Class reflecting UMG_CustomMenu in the LogicMod
+// Class reflecting UMG_ModMenu in the LogicMod
 class ModMenu : public UUserWidget
 {
 public:

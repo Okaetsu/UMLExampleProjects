@@ -15,6 +15,8 @@ public:
 
 	static void RegisterEvent(UE4::UObject* Object, std::string eventName, std::function<void()> cb);
 
+	static void Clear();
+
 private:
 	static void RegisterObject(UE4::UObject* Object);
 };

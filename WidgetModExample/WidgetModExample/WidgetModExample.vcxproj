@@ -81,7 +81,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>D:\SteamLibrary\steamapps\common\Stray\Hk_project\Content\CoreMods</OutDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -154,7 +154,6 @@
     <ClCompile Include="ModMenuButton.cpp" />
     <ClCompile Include="ModMenuItem.cpp" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="FontManager.cpp" />
     <ClCompile Include="ObjectEventManager.cpp" />
     <ClCompile Include="UFont.cpp" />
     <ClCompile Include="UGameplayStatics.cpp" />
@@ -171,6 +170,7 @@
     <ClCompile Include="UWidget.cpp" />
     <ClCompile Include="UWidgetBlueprintLibrary.cpp" />
     <ClCompile Include="WidgetEvent.cpp" />
+    <ClCompile Include="WidgetFactory.cpp" />
     <ClCompile Include="WidgetModExample.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -183,7 +183,6 @@
     <ClInclude Include="ESlateSizeRule.h" />
     <ClInclude Include="FFontOutlineSettings.h" />
     <ClInclude Include="FMargin.h" />
-    <ClInclude Include="FontManager.h" />
     <ClInclude Include="FSlateChildSize.h" />
     <ClInclude Include="FSlateColor.h" />
     <ClInclude Include="FSlateFontInfo.h" />
@@ -203,6 +202,7 @@
     <ClInclude Include="UWidget.h" />
     <ClInclude Include="UWidgetBlueprintLibrary.h" />
     <ClInclude Include="WidgetEvent.h" />
+    <ClInclude Include="WidgetFactory.h" />
     <ClInclude Include="WidgetModExample.h" />
   </ItemGroup>
   <ItemGroup>

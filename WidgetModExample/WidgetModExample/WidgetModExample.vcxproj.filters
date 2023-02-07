@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="UE4">
+      <UniqueIdentifier>{0f000464-de2e-48e5-a35e-7e7cb7596649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mod">
+      <UniqueIdentifier>{5e9905c0-4bbb-46a4-8002-8adc3490cc17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mod\Classes">
+      <UniqueIdentifier>{58cfe3f8-0f94-41de-a9c9-76dbbf81f949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mod\Classes\UE4">
+      <UniqueIdentifier>{c96ac349-9fd0-49af-9c1e-4165698fe0ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mod\Classes\Custom">
+      <UniqueIdentifier>{3c1d4b03-952b-4451-b645-6b697540d4e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mod\Struct">
+      <UniqueIdentifier>{cb1064db-8748-4266-b077-10afe33edc45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mod\Enum">
+      <UniqueIdentifier>{4fbaa055-0b63-4cd2-b75e-e2f6eb883896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mod\BlueprintLibrary">
+      <UniqueIdentifier>{48316f5b-0ba9-45b2-9c4c-3c258265d3b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UnrealEngineModLoader\UE4\Basic.cpp">
+      <Filter>UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UnrealEngineModLoader\UE4\CoreUObject_functions.cpp">
+      <Filter>UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="WidgetModExample.cpp">
+      <Filter>Mod</Filter>
+    </ClCompile>
+    <ClCompile Include="UFont.cpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="UHorizontalBox.cpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="UHorizontalBoxSlot.cpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="UImage.cpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="UPanelWidget.cpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="UTextBlock.cpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="UUserWidget.cpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="UVerticalBox.cpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="UVerticalBoxSlot.cpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="UWidget.cpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClCompile>
+    <ClCompile Include="ModMenu.cpp">
+      <Filter>Mod\Classes\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="ModMenuItem.cpp">
+      <Filter>Mod\Classes\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="UGameplayStatics.cpp">
+      <Filter>Mod\BlueprintLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="UKismetStringLibrary.cpp">
+      <Filter>Mod\BlueprintLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="UKismetTextLibrary.cpp">
+      <Filter>Mod\BlueprintLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="UWidgetBlueprintLibrary.cpp">
+      <Filter>Mod\BlueprintLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>Mod</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectEventManager.cpp">
+      <Filter>Mod</Filter>
+    </ClCompile>
+    <ClCompile Include="ModMenuButton.cpp">
+      <Filter>Mod\Classes\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="WidgetEvent.cpp">
+      <Filter>Mod</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\UnrealEngineModLoader\UE4\Ue4.hpp">
+      <Filter>UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="WidgetModExample.h">
+      <Filter>Mod</Filter>
+    </ClInclude>
+    <ClInclude Include="UHorizontalBox.h">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="UHorizontalBoxSlot.h">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="UImage.h">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="UPanelWidget.h">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="UTextBlock.h">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="UUserWidget.h">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="UVerticalBox.h">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="UVerticalBoxSlot.h">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="UWidget.h">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="UFont.h">
+      <Filter>Mod\Classes\UE4</Filter>
+    </ClInclude>
+    <ClInclude Include="ModMenu.h">
+      <Filter>Mod\Classes\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="ModMenuItem.h">
+      <Filter>Mod\Classes\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="ESlateColorStylingMode.h">
+      <Filter>Mod\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="ESlateSizeRule.h">
+      <Filter>Mod\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="FFontOutlineSettings.h">
+      <Filter>Mod\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="FMargin.h">
+      <Filter>Mod\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="FSlateChildSize.h">
+      <Filter>Mod\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="FSlateColor.h">
+      <Filter>Mod\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="FSlateFontInfo.h">
+      <Filter>Mod\Struct</Filter>
+    </ClInclude>
+    <ClInclude Include="UGameplayStatics.h">
+      <Filter>Mod\BlueprintLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="UKismetStringLibrary.h">
+      <Filter>Mod\BlueprintLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="UKismetTextLibrary.h">
+      <Filter>Mod\BlueprintLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="UWidgetBlueprintLibrary.h">
+      <Filter>Mod\BlueprintLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>Mod</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSystem.h">
+      <Filter>Mod</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectEventManager.h">
+      <Filter>Mod</Filter>
+    </ClInclude>
+    <ClInclude Include="ModMenuButton.h">
+      <Filter>Mod\Classes\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="WidgetEvent.h">
+      <Filter>Mod</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UWidget.tpp">
+      <Filter>Mod\Classes\UE4</Filter>
+    </None>
+    <None Include="UWidgetBlueprintLibrary.tpp">
+      <Filter>Mod\BlueprintLibrary</Filter>
+    </None>
+  </ItemGroup>
+</Project>

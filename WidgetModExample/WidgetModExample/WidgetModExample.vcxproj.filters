@@ -103,6 +103,9 @@
     <ClCompile Include="WidgetFactory.cpp">
       <Filter>Mod</Filter>
     </ClCompile>
+    <ClCompile Include="EventDispatcher.cpp">
+      <Filter>Mod</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\UnrealEngineModLoader\UE4\Ue4.hpp">
@@ -180,7 +183,7 @@
     <ClInclude Include="UWidgetBlueprintLibrary.h">
       <Filter>Mod\BlueprintLibrary</Filter>
     </ClInclude>
-    <ClInclude Include="EventSystem.h">
+    <ClInclude Include="EventDispatcher.h">
       <Filter>Mod</Filter>
     </ClInclude>
     <ClInclude Include="ObjectEventManager.h">

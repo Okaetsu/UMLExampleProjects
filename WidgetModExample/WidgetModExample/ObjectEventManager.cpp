@@ -1,6 +1,6 @@
 #include "ObjectEventManager.h"
 
-std::map<ObjectEventManager::UObjectName, EventDispatcher> registeredObjects;
+std::map<ObjectEventManager::UObjectName, Custom::EventDispatcher> registeredObjects;
 
 void ObjectEventManager::CallEvent(UE4::UObject* Object, std::string eventName)
 {
@@ -21,7 +21,7 @@ void ObjectEventManager::RegisterEvent(UE4::UObject* Object, std::string eventNa
 		RegisterObject(Object);
 	}
 
-	registeredObjects[objectName].registerEvent(new Event<>(eventName, cb));
+	registeredObjects[objectName].registerEvent(new Custom::Event<>(eventName, cb));
 }
 
 void ObjectEventManager::Clear()
@@ -36,5 +36,5 @@ void ObjectEventManager::RegisterObject(UE4::UObject* Object)
 {
 	auto objectName = Object->GetName();
 
-	registeredObjects[objectName] = EventDispatcher();
+	registeredObjects[objectName] = Custom::EventDispatcher();
 }

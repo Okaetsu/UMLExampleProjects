@@ -1,6 +1,6 @@
 #pragma once
 #include <map>
-#include "EventSystem.h"
+#include "EventDispatcher.h"
 #include "CoreUObject_classes.hpp"
 
 /*

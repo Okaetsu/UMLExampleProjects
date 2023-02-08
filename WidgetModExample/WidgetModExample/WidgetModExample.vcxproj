@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClCompile Include="..\UnrealEngineModLoader\UE4\Basic.cpp" />
     <ClCompile Include="..\UnrealEngineModLoader\UE4\CoreUObject_functions.cpp" />
+    <ClCompile Include="EventDispatcher.cpp" />
     <ClCompile Include="ModMenu.cpp" />
     <ClCompile Include="ModMenuButton.cpp" />
     <ClCompile Include="ModMenuItem.cpp" />
@@ -175,7 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\UnrealEngineModLoader\UE4\Ue4.hpp" />
-    <ClInclude Include="EventSystem.h" />
+    <ClInclude Include="EventDispatcher.h" />
     <ClInclude Include="ModMenu.h" />
     <ClInclude Include="ModMenuButton.h" />
     <ClInclude Include="ModMenuItem.h" />

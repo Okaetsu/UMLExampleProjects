@@ -17,9 +17,6 @@
     <Filter Include="Mod\Classes\UE4">
       <UniqueIdentifier>{c96ac349-9fd0-49af-9c1e-4165698fe0ff}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Mod\Classes\Custom">
-      <UniqueIdentifier>{3c1d4b03-952b-4451-b645-6b697540d4e9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Mod\Struct">
       <UniqueIdentifier>{cb1064db-8748-4266-b077-10afe33edc45}</UniqueIdentifier>
     </Filter>
@@ -28,6 +25,9 @@
     </Filter>
     <Filter Include="Mod\BlueprintLibrary">
       <UniqueIdentifier>{48316f5b-0ba9-45b2-9c4c-3c258265d3b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mod\Classes\Custom">
+      <UniqueIdentifier>{dc42e873-85fa-402b-90e2-8ff534fc1e7d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -73,12 +73,6 @@
     <ClCompile Include="UWidget.cpp">
       <Filter>Mod\Classes\UE4</Filter>
     </ClCompile>
-    <ClCompile Include="ModMenu.cpp">
-      <Filter>Mod\Classes\Custom</Filter>
-    </ClCompile>
-    <ClCompile Include="ModMenuItem.cpp">
-      <Filter>Mod\Classes\Custom</Filter>
-    </ClCompile>
     <ClCompile Include="UGameplayStatics.cpp">
       <Filter>Mod\BlueprintLibrary</Filter>
     </ClCompile>
@@ -94,9 +88,6 @@
     <ClCompile Include="ObjectEventManager.cpp">
       <Filter>Mod</Filter>
     </ClCompile>
-    <ClCompile Include="ModMenuButton.cpp">
-      <Filter>Mod\Classes\Custom</Filter>
-    </ClCompile>
     <ClCompile Include="WidgetEvent.cpp">
       <Filter>Mod</Filter>
     </ClCompile>
@@ -105,6 +96,9 @@
     </ClCompile>
     <ClCompile Include="EventDispatcher.cpp">
       <Filter>Mod</Filter>
+    </ClCompile>
+    <ClCompile Include="YourWidget.cpp">
+      <Filter>Mod\Classes\Custom</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -143,12 +137,6 @@
     </ClInclude>
     <ClInclude Include="UFont.h">
       <Filter>Mod\Classes\UE4</Filter>
-    </ClInclude>
-    <ClInclude Include="ModMenu.h">
-      <Filter>Mod\Classes\Custom</Filter>
-    </ClInclude>
-    <ClInclude Include="ModMenuItem.h">
-      <Filter>Mod\Classes\Custom</Filter>
     </ClInclude>
     <ClInclude Include="ESlateColorStylingMode.h">
       <Filter>Mod\Enum</Filter>
@@ -189,22 +177,14 @@
     <ClInclude Include="ObjectEventManager.h">
       <Filter>Mod</Filter>
     </ClInclude>
-    <ClInclude Include="ModMenuButton.h">
-      <Filter>Mod\Classes\Custom</Filter>
-    </ClInclude>
     <ClInclude Include="WidgetEvent.h">
       <Filter>Mod</Filter>
     </ClInclude>
     <ClInclude Include="WidgetFactory.h">
       <Filter>Mod</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="UWidget.tpp">
-      <Filter>Mod\Classes\UE4</Filter>
-    </None>
-    <None Include="UWidgetBlueprintLibrary.tpp">
-      <Filter>Mod\BlueprintLibrary</Filter>
-    </None>
+    <ClInclude Include="YourWidget.h">
+      <Filter>Mod\Classes\Custom</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

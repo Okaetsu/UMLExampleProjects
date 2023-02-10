@@ -1,11 +1,11 @@
 #pragma once
 #include <thread>
 #include "Mod/Mod.h"
-#include "ModMenu.h"
-#include "ModMenuButton.h"
+#include "WidgetEvent.h"
 #include "UWidgetBlueprintLibrary.h"
 #include "WidgetFactory.h"
 #include "ObjectEventManager.h"
+#include "YourWidget.h"
 
 class WidgetModExample : public Mod
 {
@@ -16,7 +16,7 @@ public:
 	{
 		ModName = "WidgetModExample"; // Mod Name -- If Using BP ModActor, Should Be The Same Name As Your Pak
 		ModVersion = "1.0.0"; // Mod Version
-		ModDescription = "Example for messing with Widgets in general"; // Mod Description
+		ModDescription = "Template for messing with Widgets"; // Mod Description
 		ModAuthors = "Okaetsu"; // Mod Author
 		ModLoaderVersion = "2.2.1";
 

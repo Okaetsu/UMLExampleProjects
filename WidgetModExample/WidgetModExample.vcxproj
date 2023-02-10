@@ -151,9 +151,6 @@
     <ClCompile Include="..\UnrealEngineModLoader\UE4\Basic.cpp" />
     <ClCompile Include="..\UnrealEngineModLoader\UE4\CoreUObject_functions.cpp" />
     <ClCompile Include="EventDispatcher.cpp" />
-    <ClCompile Include="ModMenu.cpp" />
-    <ClCompile Include="ModMenuButton.cpp" />
-    <ClCompile Include="ModMenuItem.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="ObjectEventManager.cpp" />
     <ClCompile Include="UFont.cpp" />
@@ -163,6 +160,7 @@
     <ClCompile Include="UImage.cpp" />
     <ClCompile Include="UKismetStringLibrary.cpp" />
     <ClCompile Include="UKismetTextLibrary.cpp" />
+    <ClCompile Include="YourWidget.cpp" />
     <ClCompile Include="UPanelWidget.cpp" />
     <ClCompile Include="UTextBlock.cpp" />
     <ClCompile Include="UUserWidget.cpp" />
@@ -177,9 +175,6 @@
   <ItemGroup>
     <ClInclude Include="..\UnrealEngineModLoader\UE4\Ue4.hpp" />
     <ClInclude Include="EventDispatcher.h" />
-    <ClInclude Include="ModMenu.h" />
-    <ClInclude Include="ModMenuButton.h" />
-    <ClInclude Include="ModMenuItem.h" />
     <ClInclude Include="ESlateColorStylingMode.h" />
     <ClInclude Include="ESlateSizeRule.h" />
     <ClInclude Include="FFontOutlineSettings.h" />
@@ -195,6 +190,7 @@
     <ClInclude Include="UImage.h" />
     <ClInclude Include="UKismetStringLibrary.h" />
     <ClInclude Include="UKismetTextLibrary.h" />
+    <ClInclude Include="YourWidget.h" />
     <ClInclude Include="UPanelWidget.h" />
     <ClInclude Include="UTextBlock.h" />
     <ClInclude Include="UUserWidget.h" />
@@ -210,10 +206,6 @@
     <ProjectReference Include="..\UnrealEngineModLoader\UnrealEngineModLoader.vcxproj">
       <Project>{de3bc2ad-2683-4d76-ad72-95d98164e9c7}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="UWidget.tpp" />
-    <None Include="UWidgetBlueprintLibrary.tpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
